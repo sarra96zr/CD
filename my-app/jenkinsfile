@@ -16,7 +16,7 @@
 {
                   steps {
                          script{
-                         sh "ansible-playbook Ansible/docker.yml -i Ansible/inventory/host.yml "
+                         sh "ansible-playbook my-app/Ansible/docker.yml -i my-app/Ansible/inventory/host.yml "
                                 }
                         }
   }
