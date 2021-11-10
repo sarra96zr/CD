@@ -1,19 +1,19 @@
-pipeline {
-    agent any
-      stages{
-         stage('Pull'){
-            steps {
-              script{
-                  checkout([$class: 'GitSCM', branches: [[name: '*/master']],
-                       userRemoteConfigs: [[
-                          credentialsId:'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',
-                          url: 'https://github.com/sarra96zr/CD.git']]])
-
-                     }
-
+ pipeline {
+  agent any
+    stages {
+        stage('Pull') {
+             steps{
+                script{
+                    checkout([$class: 'GitSCM', branches: [[name: '*/master']],
+                        userRemoteConfigs: [[
+                            credentialsId: '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',
+                            url: 'https://github.com/sarra96zr/CD.git']]])
+                }
             }
         }
-}
+
+
+      
 
 
 }
