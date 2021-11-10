@@ -6,7 +6,7 @@
                 script{
                     checkout([$class: 'GitSCM', branches: [[name: '*/master']],
                         userRemoteConfigs: [[
-                            credentialsId: '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',
+                            credentialsId: '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',
                             url: 'https://github.com/sarra96zr/CD.git']]])
                 }
             }
