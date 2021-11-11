@@ -4,7 +4,7 @@
   docker_image:
     name: Project
     build:
-     path: /var/lib/jenkins/workspace/Project
+     path: /var/lib/jenkins/workspace/First_app
      pull: no
     source: build
     state: present
@@ -12,7 +12,7 @@
 - name: run container docker
   docker_container:
     name: myapp_container
-    image: Project:latest
+    image: First_app:latest
     state: started
     recreate: true
     ports:
