@@ -4,3 +4,5 @@
                
          - name: build app
            shell: ng build 
+         
+         - meta: clear_host_error
