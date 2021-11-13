@@ -17,6 +17,7 @@
         stage('Install') {
              steps{
                 script{
+                    sh "sudo npm init"
                     sh "sudo npm install"
                 }
             }
